@@ -1,0 +1,357 @@
+:root{
+  --backbround-color:#ffffff;
+  --navbar-color: #95BDFF;
+  --text-color: #092635;
+}
+
+.dark-theme{
+  --backbround-color:#423F3E;
+  --navbar-color: #001E6C;
+  --text-color: #ffffff;
+
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  margin-top: 70px;
+  background-color: var(--backbround-color);
+  transition: 0.6s;
+}
+
+p {
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 100px 0 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 72px;
+  background: var(--navbar-color);
+  transition: 0.6s;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 0 0;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+nav a {
+  padding: 0 32px;
+  color: var(--text-color);
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: rgb(33, 87, 223);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(23, 71, 195);
+}
+
+#logo-img {
+  display: flex;
+  height: 100%;
+  padding: 0 32px;
+  align-items: center;
+  color: white;
+  transition: 0.4s;
+}
+
+#logo-img img {
+  height: 50px;
+}
+
+#icon{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  background: var(--navbar-color);
+  padding: 8px;
+  color: var(--text-color);
+  display: flex;
+  transition: 0.6s;
+  
+}
+
+footer a {
+  color: white;
+}
+
+footer #left-footer {
+  flex: 1;
+  border-right: 1px solid rgb(255, 255, 255);
+  padding-left: 100px;
+  padding-right: 332px;
+}
+
+footer #left-footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;
+}
+
+footer #right-footer {
+  flex: 2;
+  padding: 8px;
+  text-align: center;
+}
+
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-youtube {
+  color: var(--text-color);
+  transition: 0.4s;
+}
+
+footer #social-media-footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+footer #social-media-footer ul li {
+  font-size: 48px;
+  padding: 16px;
+  transition: 0.4s;
+}
+
+footer #social-media-footer ul li:hover a .fa-youtube {
+  color: red;
+}
+
+footer #social-media-footer ul li:hover a .fa-facebook {
+  color: #3b5998;
+}
+
+.page-heading{
+  margin-top: 50px;
+  font-size:32px;
+  color: var(--text-color);
+  font-family:'Roboto Condensed', sans-serif;
+  border-left:3px solid var(--text-color);
+  border-right:3px solid var(--text-color);
+  transition: all 0.6s;
+  display:inline-block;
+  padding:4px 32px;
+}
+
+.page-heading:hover{
+  padding:4px 48px;
+  background:rgb(23, 71, 195);
+  color: #ffffff;
+}
+
+/* Sidebar */
+
+
+#sidebar{
+  background:#333;
+  flex:1;
+  padding: 8px 16px;
+  color:white;
+  box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75);
+}
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.row {
+  border-bottom: 4px solid rgb(23, 71, 195);
+  width: 1400px;
+  margin: 30px auto;
+}
+
+.row .heading {
+  display: inline-block;
+  background-color: rgb(23, 71, 195);
+  color: #fff;
+  font-size: 24px;
+  font-family: calibri;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.maintenance-detail{
+  width: 1000px;
+  margin: 30px auto;
+  color: var(--text-color);
+  font-size: large;
+}
+
+header {
+  color: black;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.container {
+  display: none;
+  transform: translateY(-100%) scale(0);
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-primary);
+}
+
+.active {
+  display: block;
+  animation: appear 1s ease-in-out;
+  transform: translateY(0) scaleY(1);
+}
+
+
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: x-large;
+  min-height: 70vh;
+  color: var(--text-color);
+  transition: 0.6s;
+}
+
+.header-content .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-content .left-header .images {
+  border-radius: var(--br-sm-2);
+  width: 68%;
+  margin-left: 10rem;
+  background-color: var(--color-black);
+  transition: all 0.2s ease-in-out;
+}
+
+.header-content .left-header .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header-content .left-header .images img:hover {
+  filter: grayscale(0);
+}
+
+.header-content .right-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10rem;
+}
+
+.header-content .right-header .name {
+  font-size: 3rem;
+}
+
+.header-content .right-header .name span {
+  color: var(--color-secondary);
+}
+
+.header-content .right-header p {
+  margin: 1.5rem 0;
+  line-height: 2rem;
+}
+
+.image {
+  display: block;
+  margin: 20px auto;
+  width: 48%;
+  height: auto;
+  justify-content: center;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.main-image {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,104 @@
+#calculate-payment {
+    max-width: 400px;
+    margin: 50px auto 70px auto;
+    background-color: #ececec;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    /* Increased padding for better spacing */
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    /* Add a border for a cleaner look */
+    border-radius: 8px;
+    /* Slightly reduce border radius */
+    font-size: 16px;
+    /* Adjust font size for better readability */
+    outline: none;
+    /* Remove the default outline on focus */
+    transition: border-color 0.3s;
+    /* Add a smooth transition effect on border color */
+}
+
+/* Style the input on focus */
+input:focus {
+    border-color: #007bff;
+    /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Add a subtle box shadow on focus */
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+button {
+    background-color: transparent;
+    /* เปลี่ยนสีพื้นหลังเป็นโปร่งใส */
+    color: #000;
+    /* เปลี่ยนสีตัวอักษรเป็นสีดำ */
+    border: 2px solid #000;
+    /* เพิ่มเส้นขอบดำ */
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: larger;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* เพิ่ม transition สำหรับสีพื้นหลังและสีตัวอักษร */
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* เพิ่มสีพื้นหลังที่มีความโปร่งใสเมื่อ hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a subtle box shadow on hover */
+}
+
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #fff;
+    /* Change text color to match the button text color */
+    color: #0057b4;
+    /* Match the button background color */
+    padding: 15px;
+    border-radius: 10px;
+}
